@@ -282,7 +282,7 @@ a {
 }
 
 .content__header {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .title {
@@ -299,6 +299,11 @@ a {
   font: inherit;
   font-size: 21px;
   padding: 5px 10px;
+}
+
+.products .col-4 {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .product-card {
@@ -405,7 +410,7 @@ a {
   color: #fff;
   cursor: pointer;
   justify-content: center;
-  height: 50px;
+  padding: 15px 0;
   align-items: center;
   text-transform: uppercase;
   gap: 10px;
@@ -418,4 +423,10 @@ a {
 .product-card__btn:hover {
   background-color: rgba(255, 255, 255, 0.75);
   border-color: rgba(255, 255, 255, 0.75);
+}
+
+.product-card__btn .icon {
+  width: 16px;
+  height: 17px;
+  margin-bottom: 2px;
 }
