@@ -430,3 +430,27 @@ a {
   height: 17px;
   margin-bottom: 2px;
 }
+
+.product-card__footer {
+  text-align: center;
+}
+
+.products__footer {
+  text-align: center;
+  margin: 35px 0 85px 0;
+}
+
+.products__load {
+  display: inline-block;
+  font-size: 36px;
+  font-weight: 100;
+  text-align: center;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+}
+
+.products__load:hover {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+}
