@@ -52,14 +52,20 @@
                     type="search"
                     placeholder="Search"
                   />
-                  <button class="search-form__btn" type="submit">
-                    <img src="images/search.png" alt="search" />
+                  <button class="btn" type="submit">
+                    <svg class="icon icon-light icon-search">
+                      <use
+                        xlink:href="images/symbol-defs.svg#icon-search"
+                      ></use>
+                    </svg>
                   </button>
                 </div>
               </div>
-              <div class="col-3">
+              <div class="col-3 cart-wrapper">
                 <div class="cart">
-                  <img src="images/cart.png" alt="cart" />
+                  <svg class="icon icon-cart">
+                    <use xlink:href="images/symbol-defs.svg#icon-cart"></use>
+                  </svg>
                   <div class="products-count">4</div>
                 </div>
               </div>
@@ -93,6 +99,68 @@
                       <option value="date">sort by date</option>
                       <option value="popularity">sort by popularity</option>
                     </select>
+                  </div>
+                </div>
+              </div>
+              <div class="products">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="product-card">
+                      <div class="product-card__header">
+                        <img src="images/card-1.png" alt="monitor" />
+                        <div class="product-card__tools">
+                          <button class="btn btn-light" type="button">
+                            <svg class="icon icon-scale">
+                              <use
+                                xlink:href="images/symbol-defs.svg#icon-scale"
+                              ></use>
+                            </svg>
+                          </button>
+                          <button class="btn btn-light" type="button">
+                            <svg class="icon icon-like">
+                              <use
+                                xlink:href="images/symbol-defs.svg#icon-like"
+                              ></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="product-card__body">
+                        <h3 class="product-card__title">#1 Device Name</h3>
+                        <p class="product-card__text">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit.
+                        </p>
+                        <ul class="characteristics">
+                          <li>
+                            <span class="characteristics__name">TYPE:</span>
+                            <span class="characteristics__value">Laptop</span>
+                          </li>
+                          <li>
+                            <span class="characteristics__name"
+                              >Screen size:</span
+                            >
+                            <span class="characteristics__value">7 inches</span>
+                          </li>
+                          <li>
+                            <span class="characteristics__name">ram:</span>
+                            <span class="characteristics__value">1GB</span>
+                          </li>
+                        </ul>
+                        <p class="product-card__price">$599 <sup>25</sup></p>
+                      </div>
+                      <div class="product-card__footer">
+                        <a href="#" class="product-card__btn">more details</a>
+                        <button class="product-card__btn" type="button">
+                          <span>add to cart</span>
+                          <svg class="icon icon-light icon-cart">
+                            <use
+                              xlink:href="images/symbol-defs.svg#icon-cart"
+                            ></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
