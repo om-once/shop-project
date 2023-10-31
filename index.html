@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Shop project bla bla</title>
+    <title>Shop project</title>
   </head>
   <body>
     <header class="header">
@@ -25,9 +25,9 @@
           <div class="col-6">
             <nav>
               <ul class="menu">
-                <li><a href="#">Home 1</a></li>
+                <li><a href="#">Home</a></li>
                 <li>
-                  <a href="#">Products 1</a>
+                  <a href="#">Products</a>
                   <ul class="submenu">
                     <li><a href="#">Lorem ipsum dolor</a></li>
                     <li><a href="#">Sit amet</a></li>
@@ -38,8 +38,8 @@
                     <li><a href="#">Quis nostrud</a></li>
                   </ul>
                 </li>
-                <li><a href="#">Payment 1</a></li>
-                <li><a href="#">Shipping 1</a></li>
+                <li><a href="#">Payment</a></li>
+                <li><a href="#">Shipping</a></li>
               </ul>
             </nav>
           </div>
@@ -78,7 +78,160 @@
       <div class="container">
         <div class="row">
           <div class="col-3">
-            <aside class="sidebar"></aside>
+            <aside class="sidebar">
+              <form action="#" class="product-filter">
+                <fieldset class="product-filter__box">
+                  <legend class="product-filter__title">Device Type</legend>
+                  <div class="product-filter__auth">
+                    <input
+                      id="laptop-device"
+                      type="checkbox"
+                      class="product-filter__input"
+                      name="device-type"
+                      checked
+                    />
+                    <label class="product-filter__label" for="laptop-device"
+                      >Laptop</label
+                    >
+                  </div>
+                  <div class="product-filter__auth">
+                    <input
+                      id="tablet-device"
+                      type="checkbox"
+                      class="product-filter__input"
+                      name="device-type"
+                    />
+                    <label class="product-filter__label" for="tablet-device"
+                      >Tablet</label
+                    >
+                  </div>
+                </fieldset>
+                <fieldset class="product-filter__box">
+                  <legend class="product-filter__title">Color</legend>
+                  <div class="product-filter__auth">
+                    <input
+                      id="color-black"
+                      type="checkbox"
+                      class="product-filter__input"
+                      name="color-type"
+                    />
+                    <label class="product-filter__label" for="color-black"
+                      >Black</label
+                    >
+                  </div>
+                  <div class="product-filter__auth">
+                    <input
+                      id="color-red"
+                      type="checkbox"
+                      class="product-filter__input"
+                      name="color-type"
+                    />
+                    <label class="product-filter__label" for="color-red"
+                      >Red</label
+                    >
+                  </div>
+                  <div class="product-filter__auth">
+                    <input
+                      id="color-green"
+                      type="checkbox"
+                      class="product-filter__input"
+                      name="color-type"
+                      checked
+                    />
+                    <label class="product-filter__label" for="color-green"
+                      >Green</label
+                    >
+                  </div>
+                  <div class="product-filter__auth">
+                    <input
+                      id="color-blue"
+                      type="checkbox"
+                      class="product-filter__input"
+                      name="color-type"
+                    />
+                    <label class="product-filter__label" for="color-blue"
+                      >Blue</label
+                    >
+                  </div>
+                  <div class="product-filter__auth">
+                    <input
+                      id="color-orange"
+                      type="checkbox"
+                      class="product-filter__input"
+                      name="color-type"
+                    />
+                    <label class="product-filter__label" for="color-orange"
+                      >Orange</label
+                    >
+                  </div>
+                </fieldset>
+                <fieldset class="product-filter__box mb-10">
+                  <legend class="product-filter__title">RAM</legend>
+                  <div class="product-filter__auth">
+                    <input
+                      id="ram-1gb"
+                      type="checkbox"
+                      class="product-filter__input"
+                      name="ram-type"
+                    />
+                    <label class="product-filter__label" for="ram-1gb"
+                      >1GB</label
+                    >
+                  </div>
+                  <div class="product-filter__auth">
+                    <input
+                      id="ram-2gb"
+                      type="checkbox"
+                      class="product-filter__input"
+                      name="ram-type"
+                    />
+                    <label class="product-filter__label" for="ram-2gb"
+                      >2GB</label
+                    >
+                  </div>
+                  <div class="product-filter__auth">
+                    <input
+                      id="ram-4gb"
+                      type="checkbox"
+                      class="product-filter__input"
+                      name="ram-type"
+                      checked
+                    />
+                    <label class="product-filter__label" for="ram-4gb"
+                      >4GB</label
+                    >
+                  </div>
+                  <div class="product-filter__auth">
+                    <input
+                      id="ram-6gb"
+                      type="checkbox"
+                      class="product-filter__input"
+                      name="ram-type"
+                    />
+                    <label class="product-filter__label" for="ram-6gb"
+                      >6GB</label
+                    >
+                  </div>
+                  <div class="product-filter__auth">
+                    <input
+                      id="ram-8gb"
+                      type="checkbox"
+                      class="product-filter__input"
+                      name="ram-type"
+                    />
+                    <label class="product-filter__label" for="ram-8gb"
+                      >8GB</label
+                    >
+                  </div>
+                </fieldset>
+                <button type="button" class="load product-filter__btn">
+                  Show more options...
+                </button>
+                <button class="product-filter__submit" type="submit">
+                  submit
+                </button>
+              </form>
+            </aside>
           </div>
           <div class="col-9">
             <section class="content">
@@ -629,9 +782,7 @@
                 </div>
                 <div class="row">
                   <div class="col-12 products__footer">
-                    <button type="button" class="products__load">
-                      Load more ...
-                    </button>
+                    <button type="button" class="load">Load more ...</button>
                   </div>
                 </div>
               </div>
