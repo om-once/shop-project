@@ -20,17 +20,19 @@ likeBtns.forEach((item) => {
 const modalOpenBtn = document.querySelectorAll(".more-details");
 const modalWindow = document.querySelector(".modal");
 const modalCloseBtn = document.querySelector(".close");
-const modalOverlay = document.querySelector(".modal__overlay");
 modalOpenBtn.forEach((item) => {
   item.addEventListener("click", function () {
     modalWindow.classList.add("active");
   });
 });
-
-modalCloseBtn.addEventListener("click", function () {
+function closeModal() {
   modalWindow.classList.remove("active");
-});
+}
 
-modalOverlay.addEventListener("click", function () {
-  modalWindow.classList.remove("active");
+modalCloseBtn.addEventListener("click", closeModal);
+
+modalWindow.addEventListener("click", function (e) {
+  if (e.target === modalWindow) {
+    closeModal();
+  }
 });
