@@ -617,3 +617,70 @@ a {
 .modal__col-right .product-card {
   border: none;
 }
+
+.slider {
+  background-image: url("images/slider.png");
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.slider-block .slider-block__slide {
+  font-family: "Roboto", sans-serif;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.slick-arrow {
+  z-index: 100;
+  width: 26px;
+  height: 50px;
+}
+
+.slick-arrow::before {
+  display: block;
+  content: "";
+  width: 26px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-prev::before {
+  background-image: url("images/arrow-left.svg");
+}
+
+.slick-next::before {
+  background-image: url("images/arrow-right.svg");
+}
+
+.slick-dots {
+  bottom: 30px;
+}
+
+.slick-dots li button {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #fff;
+}
+
+.slick-dots li button::before {
+  display: none;
+}
+.slick-dots li.slick-active button {
+  background-color: #fff;
+}

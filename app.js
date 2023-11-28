@@ -36,3 +36,11 @@ modalWindow.addEventListener("click", function (e) {
     closeModal();
   }
 });
+
+$(".slider-block").slick({
+  dots: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
