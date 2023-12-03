@@ -684,3 +684,7 @@ a {
 .slick-dots li.slick-active button {
   background-color: #fff;
 }
+
+.product-quantity {
+  margin-left: 10px;
+}
